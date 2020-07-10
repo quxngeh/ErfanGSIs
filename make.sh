@@ -73,6 +73,7 @@ toolsdir="$LOCALDIR/tools"
 romsdir="$LOCALDIR/roms"
 prebuiltdir="$LOCALDIR/prebuilt"
 scriptsdir="$LOCALDIR/scripts"
+verRunner=cache/
 
 echo "Create Temp dir"
 rm -rf $tempdir
@@ -123,6 +124,14 @@ esac
 if [ "$flag" == "false" ]; then
     echo "$sourcever is not supported"
     exit 1
+fi
+
+echo "Setting the Android version of GSI"
+if [ -t "$verRunner" ]; then
+    rm -rf cache/
+    mkdir cache; cd cache; touch ver; echo "$sourcever" >> ver; export sourcever2=`cat ver`; mv ver ../ver; cd ../
+else
+    mkdir cache; cd cache; touch ver; echo "$sourcever" >> ver; export sourcever2=`cat ver`; mv ver ../ver; cd ../
 fi
 
 # Detect rom folder again
