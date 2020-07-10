@@ -1,17 +1,14 @@
-## Requirements
-    Linux or Mac
+# ErfanGSIs Tool - Hitsuki Edition
 
-## Released GSIs
-Download links: https://mirrors.lolinet.com/firmware/gsi/  
-XDA thread: https://forum.xda-developers.com/project-treble/trebleenabled-device-development/pie-erfan-gsi-ports-t3906486  
-Telegram group: https://t.me/ErfanGSIs  
-Telegram channel: https://t.me/ErfanGSI  
+This repository is a fork of a fork of the ErfanGSIs Tool for private use, you are free to create your fork and make your changes (give that leave the credits to all contributors of the ErfanGSIs Tool project).
+
+See also the [ErfanGSIs-Builder](https://github.com/HitaloSama/ErfanGSIs) repository where you can see GSIs being made with GitHub Actions.
 
 ## How to use
 
 ### Download tools
 ```
-git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
+git clone --recurse-submodules https://github.com/HitaloSama/ErfanGSIs.git
 cd ErfanGSIs
 ```
 
