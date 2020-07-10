@@ -2,7 +2,7 @@
 
 This repository is a fork of a fork of the ErfanGSIs Tool for private use, you are free to create your fork and make your changes (give that leave the credits to all contributors of the ErfanGSIs Tool project).
 
-See also the [ErfanGSIs-Builder](https://github.com/HitaloSama/ErfanGSIs) repository where you can see GSIs being made with GitHub Actions.
+See also the [ErfanGSIs-Builder](https://github.com/HitaloSama/ErfanGSIs-Builder) repository where you can see GSIs being made with GitHub Actions.
 
 ## How to use
 
