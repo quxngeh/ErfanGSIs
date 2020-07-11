@@ -99,7 +99,7 @@ echo "Merging system_other.img "
 	umount $outdir/system_other
 	rmdir $outdir/system_other/
 	rm $outdir/system_other.img
-    if [  $(echo -n $2 | tail -c 1) = "R" ]; then
+    if [  $(echo -n $2 | tail -c 1) = "11" ]; then
         echo "Merging system_ext.img "
 	    sudo mkdir $outdir/system_ext
 	    mount -o ro $outdir/system_ext.img $outdir/system_ext/
