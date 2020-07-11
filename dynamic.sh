@@ -37,7 +37,6 @@ DOWNLOAD()
 	
 URL="$1"
 ZIP_NAME="$2"
-echo "Downloading firmware to: $ZIP_NAME"
 DOWNLOAD "$URL" "$ZIP_NAME"
 
 unzip $ZIP_NAME -d $tmpdir &> /dev/null
