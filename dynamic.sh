@@ -36,9 +36,8 @@ unzip $ZIP_NAME -d $tmpdir &> /dev/null
 echo "Extracting Required Partitions..."
 if [ $1 = "OxygenOS" ]; then
 		for partition in ${PARTITIONS[@]}; do
- 	   	    python $payload_extractor --partitions $partition --output_dir $tmpdir $tmpdir/payload.bin 
+ 	   	    python $payload_extractor --partitions $partition --output_dir $tmpdir $tmpdir/payload.bin
 		done
-    mv "./ErfanGSIs/payload.bin" "./ErfanGSIs/cache/tmp/payload.bin"
 	mv $tmpdir/system $outdir/system-old.img
 	mv $tmpdir/product $outdir/product.img
 	mv $tmpdir/opproduct $outdir/opproduct.img
