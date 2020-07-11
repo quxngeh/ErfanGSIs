@@ -11,7 +11,7 @@ tmpdir2="$outdir/tmp2"
 #############################################################
 
 usage() {
-    echo "Usage: $0 <Firmware Type> [Firmware URL]"
+    echo "Usage: $0 [Firmware URL] <Firmware Type>"
     echo -e "\tFirmware Type! = OxygenOS or Pixel"
     echo -e "\tFirmware URL!"
 }
@@ -29,8 +29,8 @@ echo "Create Temp and out dir"
 
 DOWNLOAD()
 {
-	ZIP_NAME="$1"
-    URL="$2"
+    URL="$1"
+    ZIP_NAME="$2"
     echo "Downloading firmware to: $ZIP_NAME"
     aria2c -x16 -j$(nproc) -U "Mozilla/5.0" -d "$tmpdir2" -o "$ACTUAL_ZIP_NAME" ${URL} || wget -U "Mozilla/5.0" ${URL} -O "$ZIP_NAME"
 }
@@ -44,12 +44,12 @@ if [ $1 = "OxygenOS" ]; then
 	mv $tmpdir/system $outdir/system-old.img
 	mv $tmpdir/product $outdir/product.img
 	mv $tmpdir/opproduct $outdir/opproduct.img
-elif [ $(echo -n $1 | head -c 5) = "Pixel" ]; then
+elif [ $(echo -n $2 | head -c 5) = "Pixel" ]; then
 	unzip $tmpdir/*/*.zip -d $tmpdir &> /dev/null
 	simg2img $tmpdir/system.img $outdir/system-old.img
 	simg2img $tmpdir/product.img $outdir/product.img
 	simg2img $tmpdir/system_other.img $outdir/system_other.img
- 	if [ $(echo -n $1 | tail -c 1) = "R" ]; then
+ 	if [ $(echo -n $2 | tail -c 1) = "R" ]; then
 	    simg2img $tmpdir/system_ext.img $outdir/system_ext.img
 	fi
 fi
@@ -81,7 +81,7 @@ echo "Merging product.img "
 	umount $outdir/product
 	rmdir $outdir/product/
 	rm $outdir/product.img
-if [ $1 = "OxygenOS" ]; then
+if [ $2 = "OxygenOS" ]; then
 	echo "Merging opproduct.img "
 	sudo mkdir $outdir/opproduct
 	mount -o ro $outdir/opproduct.img $outdir/opproduct/
@@ -90,7 +90,7 @@ if [ $1 = "OxygenOS" ]; then
 	umount $outdir/opproduct
 	rmdir $outdir/opproduct/
 	rm $outdir/opproduct.img
-elif [ $(echo -n $1 | head -c 5) = "Pixel" ]; then
+elif [ $(echo -n $2 | head -c 5) = "Pixel" ]; then
 echo "Merging system_other.img "
 	sudo mkdir $outdir/system_other
 	mount -o ro $outdir/system_other.img $outdir/system_other/
@@ -99,7 +99,7 @@ echo "Merging system_other.img "
 	umount $outdir/system_other
 	rmdir $outdir/system_other/
 	rm $outdir/system_other.img
-    if [  $(echo -n $1 | tail -c 1) = "R" ]; then
+    if [  $(echo -n $2 | tail -c 1) = "R" ]; then
         echo "Merging system_ext.img "
 	    sudo mkdir $outdir/system_ext
 	    mount -o ro $outdir/system_ext.img $outdir/system_ext/
