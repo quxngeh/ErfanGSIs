@@ -71,7 +71,7 @@
     "htmlparser2": "3.10.1",
     "http-signature": "1.2.0",
     "iconv-lite": "0.4.24",
-    "inherits": "2.0.3",
+    "inherits": "2.0.4",
     "is-typedarray": "1.0.0",
     "isarray": "1.0.0",
     "isstream": "0.1.2",
