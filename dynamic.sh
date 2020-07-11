@@ -26,14 +26,11 @@ echo "Create Temp and out dir"
 	mkdir -p "$tmpdir"
 	mkdir -p "$tmpdir2"
 	mkdir -p "$outdir"
-
-DOWNLOAD()
-{
-    URL="$1"
-    ZIP_NAME="$2"
-    echo "Downloading firmware to: $ZIP_NAME"
-    aria2c -x16 -j$(nproc) -U "Mozilla/5.0" -d "$tmpdir2" -o "$ACTUAL_ZIP_NAME" ${URL} || wget -U "Mozilla/5.0" ${URL} -O "$ZIP_NAME"
-}
+	
+URL="$1"
+ZIP_NAME="$2"
+echo "Downloading firmware to: $ZIP_NAME"
+aria2c -x16 -j$(nproc) -U "Mozilla/5.0" -d "$tmpdir2" -o "$ACTUAL_ZIP_NAME" ${URL} || wget -U "Mozilla/5.0" ${URL} -O "$ZIP_NAME"
 
 unzip $ZIP_NAME -d $tmpdir &> /dev/null
 echo "Extracting Required Partitions..."
