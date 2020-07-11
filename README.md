@@ -8,8 +8,8 @@ See also the [ErfanGSIs-Builder](https://github.com/HitaloSama/ErfanGSIs-Builder
 
 ### Download tools
 ```
-git clone --recurse-submodules https://github.com/HitaloSama/ErfanGSIs.git
-cd ErfanGSIs
+git clone --recurse-submodules https://github.com/HitaloSama/ErfanGSIs-Hitsuki.git
+cd ErfanGSIs-Hitsuki
 ```
 
 ### For setting up requirements
