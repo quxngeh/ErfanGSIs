@@ -2,6 +2,8 @@
 
 #Variables
 
+PROJECT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
 PARTITIONS=("system" "product" "opproduct")
 payload_extractor="./ErfanGSIs/tools/update_payload_extractor/extract.py"
 LOCALDIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
@@ -32,7 +34,7 @@ DOWNLOAD()
     URL="$1"
     ZIP_NAME="$2"
     echo "Downloading firmware to: $ZIP_NAME"
-    aria2c -x16 -j$(nproc) -U "Mozilla/5.0" -d "$tmpdir2" -o "$ACTUAL_ZIP_NAME" ${URL} || wget -U "Mozilla/5.0" ${URL} -O "$ZIP_NAME"
+    aria2c -x16 -j$(nproc) -U "Mozilla/5.0" -d "$PROJECT_DIR/$tmpdir" -o "$ACTUAL_ZIP_NAME" ${URL} || wget -U "Mozilla/5.0" ${URL} -O "$ZIP_NAME"
 }
 	
 URL="$1"
