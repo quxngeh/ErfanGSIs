@@ -53,7 +53,7 @@ done
 set -- "${POSITIONAL[@]}" # restore positional parameters
 
 if [[ ! -n $2 ]]; then
-    echo "ERROR: Enter all needed parameters"
+    echo "-> ERROR: Enter all needed parameters"
     usage
     exit
 fi
@@ -75,7 +75,7 @@ DOWNLOAD()
 {
     URL="$1"
     ZIP_NAME="$2"
-    echo "Downloading firmware to: $ZIP_NAME"
+    echo "-> Downloading firmware to: $ZIP_NAME"
     aria2c -x16 -j$(nproc) -U "Mozilla/5.0" -d "$PROJECT_DIR/input" -o "$ACTUAL_ZIP_NAME" ${URL} || wget -U "Mozilla/5.0" ${URL} -O "$ZIP_NAME"
 }
 
@@ -103,14 +103,14 @@ LEAVE()
 
 echo " "
 echo " "
-echo "********************************"
-echo "           ErfanGSI            *"
-echo "        Hitsuki Edition        *"
-echo "********************************"
+echo "*********************************"
+echo "*          ErfanGSIs            *"
+echo "*       Hitsuki Edition         *"
+echo "*********************************"
 echo " "
 echo " "
 
-echo "Updating tools..."
+echo "-> Updating tools..."
 "$PROJECT_DIR"/update.sh
 
 # Create input & working directory if it does not exist
@@ -150,7 +150,7 @@ fi
 UMOUNT "$PROJECT_DIR/working/system"
 rm -rf "$PROJECT_DIR/working"
 
-echo "Porting ${SRCTYPENAME} GSI done on: $PROJECT_DIR/output"
+echo "-> Porting ${SRCTYPENAME} GSI done on: $PROJECT_DIR/output"
 
 if [[ -f "$PROJECT_DIR/private_utils.sh" ]]; then
     . "$PROJECT_DIR/private_utils.sh"
