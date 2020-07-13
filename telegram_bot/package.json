@@ -115,7 +115,7 @@
     "require_optional": "1.0.1",
     "resolve-from": "2.0.0",
     "rle": "1.0.2",
-    "rss-parser": "3.7.0",
+    "rss-parser": "3.8.0",
     "safe-buffer": "5.1.2",
     "safer-buffer": "2.1.2",
     "sax": "1.2.4",
