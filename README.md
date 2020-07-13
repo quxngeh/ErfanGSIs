@@ -4,8 +4,6 @@ This repository is a fork of a fork of the ErfanGSIs Tool for private use, you a
 
 See also the [ErfanGSIs-Builder](https://github.com/HitaloSama/ErfanGSIs-Builder) repository where you can see GSIs being made with GitHub Actions.
 
-## How to use
-
 ### Download tools
 
 ```
@@ -13,13 +11,29 @@ git clone --recurse-submodules https://github.com/HitaloSama/ErfanGSIs.git
 cd ErfanGSIs
 ```
 
-### For setting up requirements
-    bash setup.sh
+### Setting up requirements
 
-### Generating GSI from stock firmware URL
+bash setup.sh
 
-Example: for making OxygenOS of OnePlus 7 pro firmware, you can use this command:
+## Usage
+
 ```
-sudo ./url2GSI.sh https://oxygenos.oneplus.net/OnePlus7ProOxygen_21.O.07_OTA_007_all_1905120542_fc480574576b4843.zip OxygenOS
+./url2GSI.sh <Firmware link> <Firmware type> [Other args]
+[--help|-h|-?] [--ab|-b] [--aonly|-a] [--mounted|-m] [--cleanup|-c]
+        Firmware link: Firmware download link or local path
+        Firmware type: Firmware mode
+        --ab: Build only AB
+        --aonly: Build only A-Only
+        --cleanup: Cleanup downloaded firmware
+        --help: To show this info
 ```
-check url2GSI.sh for more info
+
+### Supported firmware types
+
+```
+Supported types on Android 9: Nubia, Moto, OneUI, MIUI, OxygenOS, ZenUI, Generic, Flyme, Pixel, ColorOS, ZUI, Xperia, RazerUI, VOS, RogUI
+
+Supported types on Android 10: MIUI, OxygenOS, Generic, Pixel, AncientOS, EvolutionX, JoyUI, Moto, PixelExperience, ZenUI, ZUI, Flyme, ColorOS
+
+Supported types on Android 11: Generic, Pixel
+```
