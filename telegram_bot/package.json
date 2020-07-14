@@ -60,7 +60,7 @@
     "fast-levenshtein": "2.0.6",
     "fast-xml-parser": "3.12.14",
     "forever-agent": "0.6.1",
-    "form-data": "2.3.3",
+    "form-data": "3.0.0",
     "getpass": "0.1.7",
     "global-agent": "2.0.1",
     "global-tunnel-ng": "2.7.1",
