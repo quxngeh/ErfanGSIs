@@ -21,6 +21,7 @@ LOCALDIR=`cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd`
 sourcepath=$1
 romtype=$2
 outputtype=$3
+verRunner=cache/
 
 if [[ $romtype == *":"* ]]; then
     romtypename=`echo "$romtype" | cut -d ":" -f 2`
@@ -247,4 +248,4 @@ fi
 $scriptsdir/mkimage.sh $systemdir $outputtype $systemsize $output $useold > $tempdir/mkimage.log
 
 echo "-> Remove Temp dir"
-rm -rf "$tempdir"
+rm -rf "$tempdir" "$verRunner"
