@@ -49,7 +49,7 @@
     "ecc-jsbn": "0.1.2",
     "entities": "2.0.3",
     "es6-promise": "3.2.1",
-    "escodegen": "1.11.1",
+    "escodegen": "1.14.3",
     "esprima": "3.1.3",
     "estraverse": "4.2.0",
     "esutils": "2.0.2",
@@ -60,7 +60,7 @@
     "fast-levenshtein": "2.0.6",
     "fast-xml-parser": "3.12.14",
     "forever-agent": "0.6.1",
-    "form-data": "2.3.3",
+    "form-data": "3.0.0",
     "getpass": "0.1.7",
     "global-agent": "2.0.1",
     "global-tunnel-ng": "2.7.1",
@@ -142,9 +142,9 @@
     "util-deprecate": "1.0.2",
     "uuid": "3.3.2",
     "verror": "1.10.0",
-    "w3c-hr-time": "1.0.1",
+    "w3c-hr-time": "1.0.2",
     "w3c-xmlserializer": "1.0.1",
-    "webidl-conversions": "4.0.2",
+    "webidl-conversions": "6.1.0",
     "whatwg-encoding": "1.0.5",
     "whatwg-mimetype": "2.3.0",
     "whatwg-url": "7.0.0",
@@ -155,7 +155,7 @@
     "xml2js": "0.4.23",
     "xmlbuilder": "9.0.7",
     "xmlchars": "1.3.1",
-    "xtend": "4.0.1"
+    "xtend": "4.0.2"
   },
   "devDependencies": {},
   "scripts": {
