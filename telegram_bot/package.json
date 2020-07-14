@@ -144,7 +144,7 @@
     "verror": "1.10.0",
     "w3c-hr-time": "1.0.2",
     "w3c-xmlserializer": "1.0.1",
-    "webidl-conversions": "4.0.2",
+    "webidl-conversions": "6.1.0",
     "whatwg-encoding": "1.0.5",
     "whatwg-mimetype": "2.3.0",
     "whatwg-url": "7.0.0",
