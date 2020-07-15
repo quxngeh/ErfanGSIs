@@ -37,7 +37,7 @@ Supported types on Android 9:
 Nubia, Moto, OneUI, MIUI, OxygenOS, ZenUI, Generic, Flyme, Pixel, ColorOS, ZUI, Xperia, RazerUI, VOS, RogUI
 
 Supported types on Android 10:
-MIUI, OxygenOS, Generic, Pixel, AncientOS, EvolutionX, JoyUI, Moto, PixelExperience, ZenUI, ZUI, Flyme, ColorOS
+Funtouch, MIUI, OxygenOS, Generic, Pixel, AncientOS, EvolutionX, JoyUI, Moto, PixelExperience, ZenUI, ZUI, Flyme, ColorOS
 
 Supported types on Android 11:
 Generic, Pixel
