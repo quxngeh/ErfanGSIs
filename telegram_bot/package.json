@@ -113,7 +113,7 @@
     "request-promise-core": "1.1.2",
     "request-promise-native": "1.0.7",
     "require_optional": "1.0.1",
-    "resolve-from": "2.0.0",
+    "resolve-from": "5.0.0",
     "rle": "1.0.2",
     "rss-parser": "3.8.0",
     "safe-buffer": "5.1.2",
