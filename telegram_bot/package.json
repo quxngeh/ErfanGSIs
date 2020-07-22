@@ -8,7 +8,7 @@
     "abab": "2.0.0",
     "acorn": "7.3.1",
     "acorn-globals": "6.0.0",
-    "acorn-walk": "6.1.1",
+    "acorn-walk": "7.2.0",
     "ajv": "6.10.0",
     "archiver": "3.0.0",
     "array-equal": "1.0.0",
