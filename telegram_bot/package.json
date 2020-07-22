@@ -28,7 +28,7 @@
     "caseless": "0.12.0",
     "cheerio": "1.0.0-rc.2",
     "clean-package-json": "1.0.3",
-    "cloudscraper": "4.1.2",
+    "cloudscraper": "4.6.0",
     "combined-stream": "1.0.7",
     "core-util-is": "1.0.2",
     "css-select": "2.1.0",
