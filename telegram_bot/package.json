@@ -43,7 +43,7 @@
     "dom-serializer": "1.0.1",
     "domelementtype": "2.0.1",
     "domexception": "1.0.1",
-    "domhandler": "2.4.2",
+    "domhandler": "3.0.0",
     "domutils": "1.5.1",
     "each-series": "1.0.0",
     "ecc-jsbn": "0.2.0",
