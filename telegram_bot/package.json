@@ -29,7 +29,7 @@
     "cheerio": "1.0.0-rc.3",
     "clean-package-json": "1.0.3",
     "cloudscraper": "4.6.0",
-    "combined-stream": "1.0.7",
+    "combined-stream": "1.0.8",
     "core-util-is": "1.0.2",
     "css-select": "2.1.0",
     "css-what": "2.1.3",
