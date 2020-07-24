@@ -104,7 +104,7 @@
     "pn": "1.1.0",
     "prelude-ls": "1.1.2",
     "process-nextick-args": "2.0.1",
-    "psl": "1.1.31",
+    "psl": "1.8.0",
     "punycode": "2.1.1",
     "qs": "6.5.2",
     "readable-stream": "3.6.0",
