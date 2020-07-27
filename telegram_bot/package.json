@@ -116,7 +116,7 @@
     "resolve-from": "5.0.0",
     "rle": "1.0.2",
     "rss-parser": "3.8.0",
-    "safe-buffer": "5.1.2",
+    "safe-buffer": "5.2.1",
     "safer-buffer": "2.1.2",
     "sax": "1.2.4",
     "saxes": "3.1.9",
