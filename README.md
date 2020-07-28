@@ -1,4 +1,4 @@
-# ErfanGSIs Tool - Hitsuki Edition
+# ErfanGSIs Tool - amyGSI Edition
 
 This repository is a fork of a fork of the ErfanGSIs Tool for private use, you are free to create your fork and make your changes (at least give the credits to all contributors of the ErfanGSIs Tool project).
 
@@ -44,3 +44,7 @@ MIUI, OxygenOS, Generic, Pixel, AncientOS, EvolutionX, JoyUI, Moto, PixelExperie
 Supported types on Android 11:
 Generic, Pixel
 ```
+### Credits
+
+Hitsuki for his edits to the tool
+Erfan for the original tool
