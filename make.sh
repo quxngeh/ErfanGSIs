@@ -200,7 +200,7 @@ if [ "$outputtype" == "Aonly" ]; then
 fi
 
 date=`date +%Y%m%d`
-outputname="OEM-$romtypename-$outputtype-$sourcever-$date-amyGSI"
+outputname="$romtypename-$outputtype-$sourcever-$date-quxngGSI"
 outputimagename="$outputname".img
 outputtextname="$outputname".txt
 if [ "$4" == "" ]; then
